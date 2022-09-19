@@ -21,9 +21,6 @@ generator.addEventListener('click', () => {
 
 function genCanvas(dim) {
     clearCanvas();
-    document.querySelectorAll('.warning').forEach(warning => {
-        body.removeChild(warning);
-    }) //remove warnings
     for (i = 0; i < dim; i++) {
         let row = document.createElement('div');
         row.classList.add('row');
