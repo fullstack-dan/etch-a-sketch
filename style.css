@@ -1,0 +1,30 @@
+#buffer {
+    height: 20px;
+}
+
+#canvas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row {
+    display: flex;
+}
+#header {
+    text-align: center;
+}
+
+.pixel {
+    transition: all 0.5s ease;
+    height: 50px;
+    width: 50px;
+    border-style: dotted;
+    border-color: black;
+}
+
+.active {
+    height: 50px;
+    width: 50px;
+    border-style: dotted;
+    background-color: black;
+}
