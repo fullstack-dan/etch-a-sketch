@@ -11,15 +11,9 @@ const generator = document.querySelector("#generator");
 generator.addEventListener('click', () => {
     var seed = document.querySelector("#seed");
     if ((seed.value % 1) != 0) { //decimal validator
-        let warning = document.createElement('div');
-        warning.classList.add("warning");
-        warning.innerHTML = "<h3>Please input a whole number! No decimals!</h3>";
-        body.appendChild(warning);
+        alert("Please input a whole number! No decimals!");
     } else if (!(seed.value >= 2) || !(seed.value <= 100)) { //quantity validator
-        let warning = document.createElement('div');
-        warning.classList.add("warning");
-        warning.innerHTML = "<h3>Please input a number greater than 2 or less than 100!</h3>";
-        body.appendChild(warning);
+        alert("Please input a number greater than 2 or less than 100!");
     } else {
         genCanvas(seed.value);
     }
