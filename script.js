@@ -33,12 +33,12 @@ function genCanvas(dim) {
             pixel.classList.add('pixel');
             row1.appendChild(pixel);
         }
-    })
+    });
     let pixels = document.querySelectorAll(".pixel");
     pixels.forEach(pixel => {
         pixel.addEventListener('mouseover', () => {
             pixel.classList.add('active');
-        })
+        });
     });
 }
 
